@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Thapelo Matsaung">
+	<title>QG Articles</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="Media/pawnLogo.jpg" />
+	<script src="mainScript.js"></script>
+
+	<link rel="stylesheet" href="mainStyle.css">
+	<style>
+		.articlesWrapper h1 {
+			color: navy;
+		}
+
+		.articleButton,
+		select,
+		input {
+			border: solid;
+			border-radius: 5px;
+			text-align: center;
+			line-height: 100%;
+			color: white;
+			background-color: navy
+		}
+
+		@media only screen and (max-width:768px) {
+
+
+
+			.allContent {
+				display: flex;
+				flex-direction: column;
+				min-height: 100vh;
+			}
+
+			.nonFooterContent {
+				flex: 1;
+			}
+
+			.articlesWrapper {
+				float: right;
+				width: 95%;
+				font-family: acme;
+				margin: 120px auto;
+			}
+
+			.articlesWrapper .browse {
+				list-style: none;
+				padding-left: 2%;
+			}
+
+			.articlesWrapper .dropdown li {
+				display: none;
+				list-style: none;
+			}
+
+			.articlesWrapper .browse:hover .dropdown li {
+				color: navy;
+				display: block
+			}
+
+			.searchArticles {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: 1fr 1fr;
+				margin-top: 5%;
+				padding-left: 2%;
+
+			}
+
+			.textInput {
+				grid-column-start: 1;
+				grid-column-end: 4;
+				margin-top: 1%
+			}
+
+			.dateInput {
+				grid-column-start: 1;
+				grid-column-end: 4;
+			}
+
+			.searchArticles input {
+				width: 175px;
+			}
+
+
+			h1,
+			a {
+				text-align: center;
+				font-family: acme;
+			}
+
+			.browse {
+				text-decoration: underline;
+				text-transform: uppercase;
+				color: navy;
+			}
+
+			.articlesWrapper h1 {
+				font-size: 25px;
+				padding-bottom: 12px;
+			}
+
+			.searchArticles select,
+			.searchArticles button {
+				height: 19px;
+				width: 75%;
+			}
+
+			.searchResultsTitle,
+			.searchResultsDate {
+				width: 100%;
+				margin: 5% auto;
+				text-align: center;
+			}
+
+			footer {
+				width: 100%;
+				background: rgba(255, 255, 255, 0.5);
+				position: relative;
+				margin-top: -132px;
+				clear: both;
+			}
+		}
+
+		@media only screen and (min-width:768px) {
+
+			html,
+			body {
+				min-height: 100vh;
+			}
+
+			.allContent {
+				position: relative;
+				min-height: 100vh;
+			}
+
+			.nonFooterContent {
+				padding-bottom: 250px;
+			}
+
+			.articlesWrapper {
+				float: right;
+				width: 95%;
+
+				font-family: acme;
+				margin: 120px auto;
+			}
+
+			.articlesWrapper .browse {
+				list-style: none;
+				padding-left: 2%;
+			}
+
+			.articlesWrapper .dropdown li {
+				display: none;
+				list-style: none;
+			}
+
+			.articlesWrapper .browse:hover .dropdown li {
+				color: navy;
+				display: block
+			}
+
+			.searchArticles {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: 1fr 1fr;
+				margin-top: 5%;
+				padding-left: 2%;
+
+			}
+
+			.textInput {
+				grid-column-start: 1;
+				grid-column-end: 4;
+				margin-top: 1%;
+				visibility: hidden;
+			}
+
+			.dateInput {
+				grid-column-start: 1;
+				grid-column-end: 4;
+				visibility: hidden
+			}
+
+			.searchArticles input {
+				width: 200px;
+			}
+
+			h1,
+			a {
+				text-align: center;
+				font-family: acme;
+			}
+
+			.browse {
+				text-decoration: underline;
+				text-transform: uppercase;
+				color: navy;
+			}
+
+			.articlesWrapper h1 {
+				font-size: 40px;
+				padding-bottom: 12px;
+			}
+
+			.searchArticles select,
+			.searchArticles button {
+				height: 19px;
+				width: 25%;
+			}
+
+			.searchResultsTitle,
+			.searchResultsDate {
+				width: 100%;
+				margin: 5% auto;
+				text-align: center;
+			}
+
+			footer {
+				width: 100%;
+				background: rgba(255, 255, 255, 0.5);
+				position: relative;
+				margin-top: -250px;
+				clear: both;
+			}
+	</style>
+
+
+</head>
+
+<body>
+	<div class="allContent">
+		<div class='nonFooterContent'>
+			<section class='navSection'>
+				<a class="alogo" href='index.html'><img class='mainLogo' src="Media/pawnLogo.jpg"></a>
+				<nav class="mainNav">
+					<ul class='mainUl'>
+						<li class='mainList'><a title="HomePage" href='index.html'>Home</a></li>
+						<li class='mainList'><a title='Browse Articles' href="Articles.html">Articles</a></li>
+						<li class='mainList'><a title="Browse Events" href="Events.html">Events</a></li>
+						<li class='mainList'><a title="Get in Touch" href="Contact.html">Contact </a></li>
+					</ul>
+
+				</nav>
+			</section>
+
+			<div class="articlesWrapper">
+
+				<h1>Chess Articles</h1>
+				<li class="browse" href="#">Browse Articles <span>&#9660</span>
+					<ul class="dropdown">
+
+						<li><a>Article 1</a></li>
+						<li><a>Article 2</a></li>
+					</ul>
+
+				</li>
+				<div class="searchArticles">
+
+					<h2>OR, Search Articles by:</h2>
+					<select onchange="Options()">
+						<option value="null"></option>
+						<option value="title">Title</option>
+						<option value="date">Published Date</option>
+					</select>
+					<input class="textInput" type="text" name='title' placeholder="Title">
+					<input class="dateInput" type='date' name="date">
+					<button class="articleButton">Search</button>
+				</div>
+				<section class="searchResultsTitle">
+					<h2>Results for articles by title: </h2>
+				</section>
+				<section class="searchResultsDate">
+					<h2>Results for articles by date: </h2>
+				</section>
+			</div>
+
+		</div>
+
+		<footer>
+			<h1>Useful Links</h1>
+			<ul>
+				<li><a href="https://Fide.com">FIDE</a></li>
+				<li><a href="https://lichess.org">Lichess</a></li>
+				<li><a href="https://chess.com">Chess.com</a></li>
+				<li><a href="https://chessbase.com">ChessBase</a></li>
+				<li><a href="https://chess-results.com">Chess Results</a></li>
+
+			</ul>
+		</footer>
+	</div>
+</body></html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Thapelo Matsaung">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="icon" type="image/png" href="Media/pawnLogo.jpg" />
+	<link rel="stylesheet" href="mainStyle.css">
+	<style>
+		.contactsWrapper section h2,
+		.contactsWrapper section h1 {
+			color: skyblue;
+		}
+
+		@media only screen and (max-width:768px) {
+
+			.contactsWrapper {
+				width: 95%;
+				padding-top: 120px;
+				margin: 0 auto;
+			}
+
+			.contactsGrid div {
+				margin-top: 2%;
+			}
+
+			.contactsWrapper section h2 {
+				font-size: 15px;
+			}
+
+			.contactsWrapper section h1 {
+				font-size: 25px;
+				text-transform: capitalize;
+				text-align: center;
+			}
+
+			.address:hover,
+			.telephone:hover,
+			.email:hover {
+				color: aqua;
+			}
+
+		}
+
+		@media only screen and (min-width:768px) {
+
+			.address:hover,
+			.telephone:hover,
+			.email:hover {
+				color: aqua;
+			}
+
+
+			.contactsWrapper {
+				width: 95%;
+				padding-top: 120px;
+				grid-area: Wrapper;
+			}
+
+			.contactsGrid div {
+				margin-top: 2%;
+			}
+
+			.contactsWrapper section h2 {
+				font-size: 25px;
+			}
+
+			.contactsWrapper section h1 {
+				font-size: 40px;
+				text-transform: capitalize;
+				text-align: center;
+			}
+		}
+	</style>
+	<script src="mainScript.js"></script>
+	<title>Get In Touch</title>
+
+</head>
+
+<body>
+	<section class='navSection'>
+		<a class="alogo" href='index.html'><img class='mainLogo' src="Media/pawnLogo.jpg"></a>
+		<nav class="mainNav">
+			<ul class='mainUl'>
+				<li class='mainList'><a title="HomePage" href='index.html'>Home</a></li>
+				<li class='mainList'><a title='Browse Articles' href="Articles.html">Articles</a></li>
+				<li class='mainList'><a title="Browse Events" href="Events.html">Events</a></li>
+				<li class='mainList'><a title="Get in Touch" href="Contact.html">Contact </a></li>
+			</ul>
+
+		</nav>
+
+
+	</section>
+
+	<div class="contactsWrapper">
+		<section>
+			<h1>Contact details</h1>
+			<h2>Do get in touch, follow us on social media, and check out our official online presence on <a href="https://www.chess.com">Chess.com</a> and <a href="https://lichess.org">Lichess</a>
+			</h2>
+			<div class='contactsGrid'>
+				<div class="address">
+					<img src="Media/icons/postal_icon.jpg" width="50px">
+					<h3>QUEEN'S GAMBIT CHESS</h3>
+					<h3>GENERIC ADDRESS</h3>
+					<h3>JOHANNESBURG</h3>
+
+					<h3>0000</h3>
+				</div>
+				<div class='telephone'>
+					<img src="Media/icons/tel_icon.jpg" width="50px">
+					<h3>+27 23 4567 890</h3>
+				</div>
+				<div class='email'>
+					<img src="Media/icons/mail_icon.jpg" width="50px">
+					<h3>info@QGChess.com</h3>
+				</div>
+				<div class='fb'>
+					<img src="Media/icons/fb_icon.jpg" width="50px">
+					<a href="https://www.facebook.com">Facebook</a>
+				</div>
+				<div class='ig'>
+					<img src="Media/icons/Insta_icon.jpg" width="50px">
+					<a href="https://www.instagram.com">Instagram</a>
+				</div>
+				<div class='twitter'>
+					<img src="Media/icons/twitter_icon.jpg" width="50px">
+					<a href="https://twitter.com">Twitter</a>
+				</div>
+				<div class='twitch'>
+					<img src="Media/icons/twitch_icon.jpg" width="50px">
+					<a href="https://www.twitch.tv">Twitch</a>
+				</div>
+				<div class='chesscom'>
+					<img src="Media/icons/chesscom_icon.jpg" width="50px">
+					<a href="https://www.chess.com">Chess.com Official Club</a>
+				</div>
+				<div class='lichess'>
+					<img src="Media/icons/lichess_icon.png" width="50px">
+					<a href="https://lichess.org">Lichess Official Club</a>
+				</div>
+
+
+
+			</div>
+		</section>
+		<footer>
+			<h1>Useful Links</h1>
+			<ul>
+				<li><a href="https://Fide.com">FIDE</a></li>
+				<li><a href="https://lichess.org">Lichess</a></li>
+				<li><a href="https://chess.com">Chess.com</a></li>
+				<li><a href="https://chessbase.com">ChessBase</a></li>
+				<li><a href="https://chess-results.com">Chess Results</a></li>
+
+			</ul>
+		</footer>
+	</div>
+</body></html>

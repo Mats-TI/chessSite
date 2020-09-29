@@ -1,0 +1,184 @@
+.eventsWrapper {
+	width: 100%;
+	padding-top: 120px;
+	grid-area: Wrapper;
+
+
+}
+
+.eventsWrapper h1 {
+	margin: 3%;
+
+}
+
+.inProgress {
+	margin: 3%;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-areas:
+		"name date venue"
+		"Iname Idate Ivenue";
+	background-color: lightgray;
+}
+
+.inProgress .name {
+	grid-area: name;
+	margin: 2.5% auto;
+
+}
+
+.inProgress .date {
+	grid-area: date;
+	margin: 2.5% auto;
+
+}
+
+.inProgress .venue {
+	grid-area: venue;
+	margin: 2.5% auto;
+
+}
+
+.inProgress .nameInput {
+	grid-area: Iname;
+	margin: 2.5% auto;
+
+}
+
+.inProgress .dateInput {
+	grid-area: Idate;
+	margin: 2.5% auto;
+
+}
+
+.inProgress .venueInput {
+	grid-area: Ivenue;
+	margin: 2.5% auto;
+}
+
+/*th {
+	line-height: 50px;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+td {
+	text-align: center;
+	line-height: 50px;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: lightgray;
+}
+
+tr {
+	border: solid;
+}*/
+
+.upcoming {
+	margin: 3%;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-areas:
+		"name date venue"
+		"Iname Idate Ivenue";
+	background-color: lightgray;
+}
+
+.upcoming .name {
+	grid-area: name;
+	margin: 2.5% auto;
+
+}
+
+.upcoming .date {
+	grid-area: date;
+	margin: 2.5% auto;
+
+}
+
+.upcoming .venue {
+	grid-area: venue;
+	margin: 2.5% auto;
+
+}
+
+.upcoming .nameInput {
+	grid-area: Iname;
+	margin: 2.5% auto;
+
+}
+
+.upcoming .dateInput {
+	grid-area: Idate;
+	margin: 2.5% auto;
+
+}
+
+.upcoming .venueInput {
+	grid-area: Ivenue;
+	margin: 2.5% auto;
+
+}
+
+
+.previous {
+	margin: 3%;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-areas:
+		"name date venue"
+		"Iname Idate Ivenue";
+	background-color: lightgray;
+}
+
+.previous .name {
+	grid-area: name;
+	margin: 2.5% auto;
+
+}
+
+.previous .date {
+	grid-area: date;
+	margin: 2.5% auto;
+
+}
+
+.previous .venue {
+	grid-area: venue;
+	margin: 2.5% auto;
+
+}
+
+.previous .nameInput {
+	grid-area: Iname;
+	margin: 2.5% auto;
+
+}
+
+.previous .dateInput {
+	grid-area: Idate;
+	margin: 2.5% auto;
+
+}
+
+.previous .venueInput {
+	grid-area: Ivenue;
+	margin: 2.5% auto;
+
+}
+
+.inProgress h2,
+.upcoming h2,
+.previous h2,
+.eventsWrapper h1 {
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+#inProgressTable {
+	margin: 3% auto;
+	background-color: white;
+	width: 50%;
+
+}

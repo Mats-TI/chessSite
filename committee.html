@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="mainStyle.css">
+	<style>
+		@media only screen and (max-width:768px) {
+
+			.roles {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+				grid-template-areas:
+					"chair"
+					"viceChair"
+					"treasurer"
+					"secretary"
+					"transformation"
+					"smManager";
+
+			}
+
+			.committeeWrapper {
+				grid-area: committeeWrapper;
+				padding-top: 120px;
+				width: 95%;
+				margin: 0 auto;
+			}
+
+			.chairperson {
+				grid-area: chair;
+				justify-self: center;
+			}
+
+			.viceChair {
+				grid-area: viceChair;
+				justify-self: center;
+			}
+
+			.treasurer {
+				grid-area: treasurer;
+				justify-self: center;
+			}
+
+			.secretary {
+				grid-area: secretary;
+				justify-self: center;
+			}
+
+			.transformation {
+				grid-area: transformation;
+				justify-self: center;
+			}
+
+			.socialMediaManager {
+				grid-area: smManager;
+				justify-self: center;
+			}
+
+			.roles img {
+				width: 200px;
+				margin: 0 auto;
+			}
+
+			.roles h2,
+			h2,
+			h1 {
+				text-align: center;
+				font-family: acme;
+			}
+
+			.roles div h2,
+			.roles div h1,
+			.roles div img {
+				margin-top: 10%
+			}
+
+			.roles div {
+				margin-top: 3%;
+			}
+
+			h1 {
+				font-size: 25px;
+			}
+
+			.roles h1 {
+				font-size: 20px;
+			}
+
+			h2 {
+				font-size: 15px;
+			}
+		}
+
+		@media only screen and (min-width:768px) {
+			.roles {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-areas:
+					"chair chair"
+					"viceChair viceChair"
+					"treasurer secretary"
+					"transformation smManager"
+				;
+			}
+
+			.committeeWrapper {
+				grid-area: committeeWrapper;
+				padding-top: 120px;
+				width: 95%;
+				margin: 0 auto;
+			}
+
+			.chairperson {
+				grid-area: chair;
+				justify-self: center;
+			}
+
+			.viceChair {
+				grid-area: viceChair;
+				justify-self: center;
+			}
+
+			.treasurer {
+				grid-area: treasurer;
+				justify-self: center;
+			}
+
+			.secretary {
+				grid-area: secretary;
+				justify-self: center;
+			}
+
+			.transformation {
+				grid-area: transformation;
+				justify-self: center;
+			}
+
+			.socialMediaManager {
+				grid-area: smManager;
+				justify-self: center;
+			}
+
+			.roles img {
+				width: 300px;
+				margin: 0 auto;
+			}
+
+			.roles h2,
+			h2,
+			h1 {
+				text-align: center;
+				font-family: acme;
+			}
+
+			.roles div h2,
+			.roles div h1,
+			.roles div img {
+				margin-top: 10%
+			}
+
+			.roles div {
+				margin-top: 3%;
+			}
+
+			h1 {
+				font-size: 40px;
+			}
+
+			.roles h1 {
+				font-size: 35px;
+			}
+
+			h2 {
+				font-size: 25px;
+			}
+		}
+
+	</style>
+	<link rel="icon" type="image/png" href="Media/pawnLogo.jpg" />
+	<script src="committee.js"></script>
+	<title>Chess Committee</title>
+	<meta name="author" content="Thapelo Matsaung">
+</head>
+
+<body>
+
+	<section class='navSection'>
+		<a class="alogo" href='index.html'><img class='mainLogo' src="Media/pawnLogo.jpg"></a>
+		<nav class="mainNav">
+			<ul class='mainUl'>
+				<li class='mainList'><a title="HomePage" href='index.html'>Home</a></li>
+				<li class='mainList'><a title='Browse Articles' href="Articles.html">Articles</a></li>
+				<li class='mainList'><a title="Browse Events" href="Events.html">Events</a></li>
+				<li class='mainList'><a title="Get in Touch" href="Contact.html">Contact </a></li>
+
+			</ul>
+		</nav>
+	</section>
+	<div class="committeeWrapper">
+		<h1>Meet the chess committee for </h1>
+		<h2>2020-2021</h2>
+		<section class='roles'>
+
+			<div class="chairperson">
+				<h1>Chairperson:</h1>
+				<h2>Name: </h2>
+				<img class="commImg1" src="Media/30-307416_profile-icon-png-image-free-download-searchpng-employee.png">
+
+			</div>
+			<div class="viceChair">
+				<h1>Vice-Chairperson:</h1>
+				<h2>Name: </h2>
+				<img class="commImg1" src="Media/30-307416_profile-icon-png-image-free-download-searchpng-employee.png">
+			</div>
+			<div class='treasurer'>
+				<h1>Treasurer: </h1>
+				<h2>Name: </h2>
+				<img class="commImg1" src="Media/30-307416_profile-icon-png-image-free-download-searchpng-employee.png">
+			</div>
+			<div class='secretary'>
+				<h1>Secretary: </h1>
+				<h2>Name: </h2>
+				<img class="commImg1" src="Media/30-307416_profile-icon-png-image-free-download-searchpng-employee.png">
+			</div>
+			<div class="transformation">
+				<h1>External Mod:</h1>
+				<h2>Name: </h2>
+				<img class="commImg1" src="Media/30-307416_profile-icon-png-image-free-download-searchpng-employee.png">
+			</div>
+			<div class="socialMediaManager">
+				<h1>Social Media Manager:</h1>
+				<h2>Name:</h2>
+				<img class="commImg1" src="Media/30-307416_profile-icon-png-image-free-download-searchpng-employee.png">
+			</div>
+
+
+		</section>
+		<footer>
+			<h1>Useful Links</h1>
+			<ul>
+				<li><a href="https://Fide.com">FIDE</a></li>
+				<li><a href="https://lichess.org">Lichess</a></li>
+				<li><a href="https://chess.com">Chess.com</a></li>
+				<li><a href="https://chessbase.com">ChessBase</a></li>
+				<li><a href="https://chess-results.com">Chess Results</a></li>
+
+			</ul>
+		</footer>
+
+	</div>
+
+
+	<!--</div>-->
+</body>
+
+</html>

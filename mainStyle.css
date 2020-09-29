@@ -1,0 +1,703 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+nav ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+input,
+select {
+	vertical-align: middle;
+}
+
+/* END OF STYLESHEET RESET */
+
+/*MAIN STYLING*/
+/*Mobile and Ipad Styling */
+body {
+	background-image: url(Media/pexels-johannes-plenio-1576849.jpg);
+	background-size: cover;
+
+}
+
+@font-face {
+	font-family: acme;
+	src: url("Media/Fonts/Acme/Acme-regular.ttf")
+}
+
+.mainNav {
+	height: 100%;
+	background-color: navy;
+	width: 95%;
+	z-index: 1000;
+}
+
+.mainList {
+	display: block;
+	margin-left: 3%;
+	text-decoration: underline;
+	line-height: 25px;
+	text-transform: uppercase;
+	font-family: acme;
+}
+
+.navSection .alogo {
+	width: 50px;
+	height: 100%;
+}
+
+.mainList a {
+	color: white;
+}
+
+.mainList a:hover {
+	color: aqua;
+}
+
+.mainLogo {
+	width: 100%;
+	height: 100%;
+	object-position: left;
+}
+
+.navSection {
+	display: flex;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	height: 100px;
+}
+
+.mainUl {
+	width: 70%
+}
+
+.mainUl,
+input {
+	display: inline-block;
+}
+
+.sideNav {
+	width: 50px;
+	height: 400vh;
+	background-color: lightblue;
+	position: fixed;
+	margin-top: 100px;
+	grid-area: sideBarMobile;
+}
+
+.sideList span {
+	font-size: 310%;
+}
+
+.sideList {
+	font-size: 100%;
+	margin-top: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.sideNav:hover {
+	width: 150px;
+	transition: all 0.5s ease-in-out;
+}
+
+footer {
+	text-align: center;
+	margin-top: 3%;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+footer li {
+	display: block;
+	margin-top: 2%
+}
+
+/*Desktop Styling*/
+@media only screen and (min-width:1024px) {
+	body {
+		background-image: url(Media/pexels-johannes-plenio-1576849.jpg);
+		background-size: cover;
+
+	}
+
+	@font-face {
+		font-family: acme;
+		src: url("Media/Fonts/Acme/Acme-regular.ttf")
+	}
+
+	.mainNav {
+		height: 80px;
+		background-color: navy;
+		width: 100%;
+		display: flex;
+		z-index: 1000;
+		grid-area: "mainNav";
+	}
+
+	.navSection .alogo {
+		width: 80px;
+		height: 100%;
+	}
+
+	.mainList {
+		display: inline-block;
+		margin-left: 10%;
+		text-decoration: underline;
+		line-height: 80px;
+		text-transform: uppercase;
+		font-family: acme;
+	}
+
+	.mainList a {
+		color: white;
+	}
+
+	.mainList a:hover {
+		color: aqua;
+	}
+
+	.mainLogo {
+		width: 100%;
+		height: 80px;
+		object-position: left;
+	}
+
+	.navSection {
+		display: flex;
+		position: fixed;
+		width: 100%;
+		z-index: 1000;
+		height: 100px;
+	}
+
+	/*.navSection {
+		display: grid;
+		grid-template-columns: 4% 96%;
+		grid-template-areas:
+			"logo mainNav"
+	}*/
+
+	/*.navSection a {
+		grid-area: "logo";
+		width: 100%
+	}*/
+
+
+	.mainUl {
+		width: 70%;
+	}
+
+	.mainUl,
+	input {
+		display: inline-block;
+	}
+
+	.sideNav {
+		width: 80px;
+		height: 400vh;
+		background-color: lightblue;
+		position: fixed;
+		margin-top: 80px;
+		grid-area: sideBarMobile;
+	}
+
+	/*	.sideNav {
+			width: 4%;
+			height: 100vh;
+			background-color: lightblue;
+			position: fixed;
+			margin-top: 80px;
+			grid-area: sideBar;
+
+		}*/
+
+	.sideList span {
+		font-size: 90px;
+	}
+
+	.sideList {
+		font-size: 20px;
+		margin-top: 15px;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.sideNav:hover {
+		width: 250px;
+		transition: all 0.5s ease-in-out;
+	}
+
+	footer {
+		text-align: center;
+		margin-top: 3%;
+	}
+
+	footer li {
+		display: block;
+		margin-top: 2%
+	}
+
+}
+
+/*HOMEPAGE*/
+/* Mobile and Ipad Styling */
+
+.wrapper h1,
+.wrapper h2,
+.sideList,
+.mainNav {
+	font-family: acme;
+}
+
+.wrapper {
+
+	width: 100%;
+	padding-top: 120px;
+	grid-area: Wrapper;
+	padding-left: 60px;
+
+
+
+}
+
+.wrapperAndSidenav {
+	display: flex;
+}
+
+/*.wrapperAndSidenav {
+	display: grid;
+	grid-template-columns: 5% 95%;
+	grid-template-areas: "sideBarMobile Wrapper";
+}*/
+
+.wrapper footer h1 {
+	color: navy;
+}
+
+.puzzles {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 50% 50%;
+	grid-template-areas:
+		"chesscompuzzle"
+		"chessbasepuzzle";
+	grid-row-gap: 30px;
+}
+
+.chesscomPuzzle {
+	grid-area: 'chesscompuzzle';
+	margin-left: 10%;
+	background-color: forestgreen;
+	margin-top: 0;
+}
+
+.gameknotPuzzle {
+	grid-area: "gameknotpuzzle";
+	margin: 0 10%;
+	background-color: steelblue;
+	margin-top: 0;
+
+}
+
+.chessbasePuzzle {
+	grid-area: "chessbasepuzzle";
+	margin: 0 10%;
+	background-color: lightcoral;
+	margin-top: 0;
+}
+
+
+.puzzles h1 {
+	color: white;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+.gameknotPuzzle #gk-daily-puzzle {
+	margin: auto auto;
+
+}
+
+.gameknotPuzzle,
+.chesscomPuzzle,
+.chessbasePuzzle,
+.analysis iframe {
+	border: solid;
+	border-width: thick;
+	border-color: black;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	border-radius: 20px;
+
+}
+
+
+.info {
+	text-align: center;
+	font-size: 100%;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.info div {
+	margin: 3%
+}
+
+.info h1 {
+	font-size: 30px;
+}
+
+.info h2 {
+	margin-top: 2%;
+	font-size: 15px;
+}
+
+.analysis h1,
+.puzzleHeading {
+	font-size: 25px;
+	text-decoration: underline
+}
+
+.puzzleHeading {
+	text-align: center;
+	padding-bottom: 30px;
+	color: deepskyblue
+}
+
+.analysis h2 {
+	font-size: 15px;
+	padding-left: 0;
+}
+
+.analysis {
+	width: 100%;
+	margin: 5% auto;
+	justify-content: center;
+}
+
+.analysis iframe {
+	margin-left: 10%
+}
+
+
+.analysis h2,
+.analysis h1 {
+	padding-bottom: 30px;
+	text-align: center;
+
+}
+
+
+/*Desktop Styling*/
+
+@media only screen and (min-width:1024px) {
+
+	.chesscomPuzzle {
+		margin: 0 auto;
+		background-color: forestgreen;
+		margin-top: 0;
+		width: 33%;
+		width: 100%;
+		grid-area: chesscom;
+	}
+
+	.gameknotPuzzle {
+		margin: 0 auto;
+		background-color: steelblue;
+		margin-top: 0;
+		width: 33%;
+		width: 100%;
+
+	}
+
+	.chessbasePuzzle {
+		margin: 0 auto;
+		background-color: lightcoral;
+		margin-top: 0;
+		width: 100%;
+		grid-area: chessbase;
+	}
+
+	.puzzles {
+		display: grid;
+		grid-template-columns: 40% 20% 40%;
+		grid-template-rows: 1fr;
+		grid-template-areas:
+			"chesscom . chessbase";
+		width: 70%;
+		margin: 0 auto;
+
+	}
+
+	.puzzles h1 {
+		color: white;
+		padding-bottom: 50px;
+		text-align: center;
+	}
+
+	.gameknotPuzzle #gk-daily-puzzle {
+		margin: auto auto;
+
+	}
+
+	.analysis {
+		width: 100%;
+		margin: 5% auto;
+
+	}
+
+	.analysis iframe {
+		margin-left: 25%
+	}
+
+
+	.analysis h2,
+	.analysis h1 {
+		padding-bottom: 30px;
+		text-align: center;
+
+	}
+
+	.gameknotPuzzle,
+	.chesscomPuzzle,
+	.chessbasePuzzle,
+	.analysis iframe {
+		border: solid;
+		border-width: thick;
+		border-color: black;
+		border-spacing: 0px;
+		border-collapse: collapse;
+		border-radius: 20px;
+
+	}
+
+	.info h1 {
+		font-size: 40px;
+	}
+
+	.info h2 {
+		margin-top: 2%;
+		font-size: 25px;
+	}
+
+	.analysis h1,
+	.puzzleHeading {
+		font-size: 30px;
+		text-decoration: underline
+	}
+
+	.puzzleHeading {
+		text-align: center;
+		padding-bottom: 30px;
+		color: deepskyblue
+	}
+
+	.analysis h2 {
+		font-size: 25px;
+		padding-left: 0;
+	}
+
+	.info {
+		text-align: center;
+		word-spacing: 5px;
+		font-size: 20px;
+
+	}
+
+	.info div {
+		margin: 3%
+	}
+
+}
+
+.contactsWrapper {
+	float: right;
+	width: 94%;
+	padding-top: 2%;
+	font-family: acme;
+}
+
+.contactsWrapper footer {
+	margin-top: 18%;
+}
+
+.contactsWrapper h1 {
+	margin: 5%;
+}
+
+footer h1 {
+	color: navy;
+}
+
+a:hover {
+	color: aqua;
+}
+
+h1,
+h2,
+h3 {
+	color: navy;
+}

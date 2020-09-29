@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="author" content="Thapelo Matsaung">
+	<meta name='viewport' content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="Media/pawnLogo.jpg">
+	<meta charset="utf-8">
+	<title>QG Events</title>
+	<link rel="stylesheet" href='mainStyle.css'>
+	<style>
+		@media only screen and (max-width:768px) {
+			body {
+				display: flex;
+				flex-direction: column;
+				min-height: 100vh;
+
+			}
+
+			.nonFooterContent {
+				flex: 1;
+			}
+
+
+			.eventsWrapper {
+				width: 95%;
+				margin: 0 auto;
+				padding-top: 120px;
+			}
+
+			h1,
+			p {
+				font-family: acme;
+			}
+
+			p {
+				font-size: 25px;
+				text-align: center;
+				color: navy;
+			}
+
+			h1,
+			.inProgressTable {
+				text-align: center;
+				margin-top: 3%;
+				color: navy;
+				text-transform: uppercase;
+			}
+
+			table {
+				background-color: white;
+				margin: 3% auto;
+				width: 100%;
+			}
+
+			th:nth-child(even) {
+				background-color: gray;
+			}
+
+			th {
+				font-size: 75%;
+			}
+		}
+
+
+
+		@media only screen and (min-width:768px) {
+			body {
+				display: flex;
+				flex-direction: column;
+				min-height: 100vh;
+
+			}
+
+			.nonFooterContent {
+				flex: 1;
+			}
+
+
+			.eventsWrapper {
+				width: 95%;
+
+				padding-top: 120px;
+			}
+
+			h1,
+			p {
+				font-family: acme;
+			}
+
+			p {
+				font-size: 40px;
+				text-align: center;
+				color: navy;
+			}
+
+			h1,
+			.inProgressTable {
+				text-align: center;
+				margin-top: 3%;
+				color: navy;
+				text-transform: uppercase;
+			}
+
+			table {
+				background-color: white;
+				margin: 3% auto;
+				width: 60%;
+			}
+		}
+	</style>
+	<script src="mainScript.js"></script>
+
+</head>
+
+<body>
+	<div class='nonFooterContent'>
+		<section class='navSection'>
+			<a class="alogo" href='index.html'><img class='mainLogo' src="Media/pawnLogo.jpg"></a>
+			<nav class="mainNav">
+				<ul class='mainUl'>
+					<li class='mainList'><a title="HomePage" href='index.html'>Home</a></li>
+					<li class='mainList'><a title='Browse Articles' href="Articles.html">Articles</a></li>
+					<li class='mainList'><a title="Browse Events" href="Events.html">Events</a></li>
+					<li class='mainList'><a title="Get in Touch" href="Contact.html">Contact </a></li>
+				</ul>
+
+			</nav>
+
+
+		</section>
+
+		<div class="eventsWrapper">
+			<p>CHESS EVENTS</p>
+			<h1>Events in Progress</h1>
+
+			<table id='inProgressTable'>
+				<tr>
+					<th>Event Name:</th>
+					<th>Date:</th>
+					<th>Venue/Site:</th>
+					<th>Results/Standings:</th>
+				</tr>
+
+			</table>
+			<h1>Upcoming Events</h1>
+			<table id="upcomingTable">
+				<tr>
+					<th>Event Name:</th>
+					<th>Date:</th>
+					<th>Venue/Site:</th>
+					<th>Results/Standings:</th>
+				</tr>
+
+			</table>
+			<h1>Previous Events</h1>
+			<table id="previousTable">
+				<tr>
+					<th>Event Name:</th>
+					<th>Date:</th>
+					<th>Venue/Site:</th>
+					<th>Results/Standings:</th>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+	<footer>
+		<h1>Useful Links</h1>
+		<ul>
+			<li><a href="https://Fide.com">FIDE</a></li>
+			<li><a href="https://lichess.org">Lichess</a></li>
+			<li><a href="https://chess.com">Chess.com</a></li>
+			<li><a href="https://chessbase.com">ChessBase</a></li>
+			<li><a href="https://chess-results.com">Chess Results</a></li>
+
+		</ul>
+	</footer>
+</body></html>
