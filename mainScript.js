@@ -26,3 +26,22 @@ var Options = function () {
 		}
 	}
 }
+
+//Show Results
+
+const ArticleResults = function () {
+	var searchOption = document.querySelectorAll("select option");
+
+	for (var i = 0; i < searchOption.length; i++) {
+		if (searchOption[i].selected) {
+			if (searchOption[i].value == "null") {
+				console.log("this is null");
+			} else if (searchOption[i].value == "title") {
+				document.querySelector(".searchResults").innerHTML = "<h2> Results for Articles by Title</h2>"
+
+			} else if (searchOption[i].value == "date") {
+				document.querySelector(".searchResults").innerHTML = "<h2> Results for Articles by Published Date</h2>"
+			}
+		}
+	}
+}
