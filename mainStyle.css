@@ -316,7 +316,7 @@ footer li {
 	}
 
 	.mainList a:hover {
-		color: aqua;
+		color: skyblue;
 	}
 
 	.mainLogo {
@@ -356,7 +356,7 @@ footer li {
 	}
 
 	.sideNav {
-		width: 80px;
+		width: 76px;
 		height: 400vh;
 		background-color: lightblue;
 		position: fixed;
@@ -375,7 +375,7 @@ footer li {
 		}*/
 
 	.sideList span {
-		font-size: 90px;
+		font-size: 80px;
 	}
 
 	.sideList {
@@ -701,3 +701,5 @@ h2,
 h3 {
 	color: navy;
 }
+
+b
