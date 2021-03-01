@@ -213,7 +213,7 @@ body {
 }
 
 .mainList a:hover {
-	color: aqua;
+	color: skyblue;
 }
 
 .mainLogo {
@@ -333,19 +333,6 @@ footer li {
 		height: 100px;
 	}
 
-	/*.navSection {
-		display: grid;
-		grid-template-columns: 4% 96%;
-		grid-template-areas:
-			"logo mainNav"
-	}*/
-
-	/*.navSection a {
-		grid-area: "logo";
-		width: 100%
-	}*/
-
-
 	.mainUl {
 		width: 70%;
 	}
@@ -363,16 +350,6 @@ footer li {
 		margin-top: 80px;
 		grid-area: sideBarMobile;
 	}
-
-	/*	.sideNav {
-			width: 4%;
-			height: 100vh;
-			background-color: lightblue;
-			position: fixed;
-			margin-top: 80px;
-			grid-area: sideBar;
-
-		}*/
 
 	.sideList span {
 		font-size: 80px;
@@ -524,7 +501,7 @@ footer li {
 .puzzleHeading {
 	text-align: center;
 	padding-bottom: 30px;
-	color: deepskyblue
+	color: white
 }
 
 .analysis h2 {
@@ -652,7 +629,7 @@ footer li {
 	.puzzleHeading {
 		text-align: center;
 		padding-bottom: 30px;
-		color: deepskyblue
+		color: white;
 	}
 
 	.analysis h2 {
@@ -693,7 +670,7 @@ footer h1 {
 }
 
 a:hover {
-	color: aqua;
+	color: darkblue;
 }
 
 h1,
@@ -702,4 +679,6 @@ h3 {
 	color: navy;
 }
 
-b
+.puzzleHeading span {
+	background-color: darkblue;
+}
